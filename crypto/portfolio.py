@@ -1,6 +1,5 @@
 import pandas as pd
 import poloniex as poloniex
-import time
 import datetime
 import numpy as np
 import webbrowser
@@ -8,6 +7,15 @@ import os
 import bokeh
 from bokeh.layouts import gridplot
 from bokeh.plotting import figure, show, output_file
+
+
+def polo_tick(ticker2):
+    if '_' in ticker2:
+        ticker_temp = ticker2
+    else:
+        ticker_temp = 'USDT_' + ticker2
+
+    return str.upper(ticker_temp)
 
 
 def ppdf(df):
@@ -63,6 +71,10 @@ def cc_holdings(ticks):
     List all holdings
     '''
 
+    # Add something to remove ticker from the thing
+    if '_' in ticks:
+        ticks = ticks[ticks.find('_') + 1:]
+
     holdings = {'btc': 1.81411,
                 'bch': 1.82789,
                 'eth': 23.6612,
@@ -91,13 +103,14 @@ def cc_snapshot(ticker, call_time=None):
         call_time = pd.to_datetime(datetime.datetime.now())
 
     quant = cc_holdings(ticker)
-    polo_tick = 'USDT_' + str.upper(ticker)
-    polo_out = polo.returnTicker()[polo_tick]
+    polo_tick_ret = polo_tick(ticker)
+
+    polo_out = polo.returnTicker()[polo_tick_ret]
 
     #polo_out_trim = list({polo_out[x] for x in ('last', 'low24hr', 'high24hr', 'baseVolume')})
 
     cc_snap = {'ticker': ticker,
-               'polo_ticker': polo_tick,
+               'polo_ticker': polo_tick_ret,
                'call_date_time': call_time,
                'quantity': quant,
                'last': polo_out['last'],
