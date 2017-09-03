@@ -18,20 +18,3 @@
 2. Magic > VirtualEnv > Activate > py3
 3. Magic > VirtualEnv > SublimeREPL - Python
 '''
-
-import pandas as pd
-import numpy as np
-import time
-import sys
-
-dict = {"Name": 'Xan', "Age": 24}
-
-print(sys.executable)
-print('Xan')
-
-l = [1,2,3]
-
-df = pd.DataFrame(l)
-
-
-
