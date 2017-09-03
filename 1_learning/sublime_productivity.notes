@@ -1,19 +1,19 @@
 ---------------------------------
     SUBLIME SHORTCUT REMINDER
-            SubLime
 ---------------------------------
-
 
 --- TEXT SELECTION ---
 
 - "command + shift + space" = Select scope (iterate)
 - "command + u" = Undo previous selection
-- "command + shift + delete" = Delete line
 - "command + l" = Select current line
+- "command + \" = go to end of line
+- "command + shift + j" = Select similar indentations
+- "command + shift + delete" = Delete line
 - "command + g" = Select next instance of current word
 - "control + command + g" = Select all of current word
-- "command + \" = go to end of line
 - "command + shift + d" = Duplicate current line
+- "command + /" = Comment current selection
 
 --- Finder (Command + P) ---
 
@@ -23,11 +23,19 @@
 
 - "Option + Command + Down" = When hovered over class find the class function
 - "Option + command" = find & replace
-
+- "fn + option + up,down" = Page up and down
 
 --- Windows ---
 
 - "option + command + 1,2,3" = Layout column windows
 - "option + command + shift + 2" = Layout row windows 
-- "command + 1,2,3"
+- "command + 1,2,3" = Select respective window
+- "command + k, command + b" = Show/hide sidebar
+
+--- Text Manipulation --- 
+
+- "command + k + u/l" = Uppercase or Lowercase 
+- "command + shift + v" = Paste with indent
+
+
 
