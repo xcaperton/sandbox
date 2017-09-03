@@ -1,0 +1,33 @@
+---------------------------------
+    SUBLIME SHORTCUT REMINDER
+            SubLime
+---------------------------------
+
+
+--- TEXT SELECTION ---
+
+- "command + shift + space" = Select scope (iterate)
+- "command + u" = Undo previous selection
+- "command + shift + delete" = Delete line
+- "command + l" = Select current line
+- "command + g" = Select next instance of current word
+- "control + command + g" = Select all of current word
+- "command + \" = go to end of line
+- "command + shift + d" = Duplicate current line
+
+--- Finder (Command + P) ---
+
+- "@" = Find classes
+- ":" = Find lines
+- "#" = Find Variables
+
+- "Option + Command + Down" = When hovered over class find the class function
+- "Option + command" = find & replace
+
+
+--- Windows ---
+
+- "option + command + 1,2,3" = Layout column windows
+- "option + command + shift + 2" = Layout row windows 
+- "command + 1,2,3"
+
