@@ -1,0 +1,82 @@
+---------------------------------
+    PYTHON HELPFUL TIPS
+---------------------------------
+
+--- CLASSES ---
+
+
+1. The __init__(self,var,etc) statement is run on class initiation and accepts variables after self.
+    - Note that the variables passed are simply variables and are not a variable to the object
+      unless denoted by self.variable_name
+2. The super().__init__(parent_variable_1='something',parent_variable_2='something2') is used to access the parent class variables
+    without having to explicity state the parent class. Also contributes to the MRO (something about order)
+3. "Abstract Base Classes" are essentially templates that we don't create an instance of but just use it for subclasses
+4. You can override methods of the base class by creating verbatim methods in the child
+5. You can pass init or methods other objects/classes to be able to reference them
+    - When passing methods simply use "Player.some_method" rather than "Player.some_method()". The "()" execute the method variables
+        while without it it is just a reference 
+6. "**kwargs" passed as a variable at the end of __init__ will allow you to pass additional variables
+
+
+'''
+Example of simple classes
+'''
+
+class Item():
+    """The base class for all items"""
+    def __init__(self, name, description, value):
+        self.name = name
+        self.description = description
+        self.value = value
+
+    def __str__(self):
+        return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
+
+
+class Weapon(Item):
+    def __init__(self, name, description, value, damage):
+        self.damage = damage
+        super().__init__(name, description, value)
+
+    def __str__(self):
+        return "{}\n=====\n{}\nValue: {}\nDamage: {}".format(self.name, self.description, self.value, self.damage)
+
+
+class Rock(Weapon):
+    def __init__(self):
+        super().__init__(name="Rock",
+                         description="A fist-sized rock, suitable for bludgeoning.",
+                         value=0,
+                         damage=5)
+
+
+class Dagger(Weapon):
+    def __init__(self):
+        super().__init__(name="Dagger",
+                         description="A small dagger with some rust. Somewhat more dangerous than a rock.",
+                         value=10,
+                         damage=10)
+
+
+class Gold(Item):
+    def __init__(self, amt):
+        self.amt = amt
+        super().__init__(name="Gold",
+                         description="A round coin with {} stamped on the front.".format(str(self.amt)),
+                         value=self.amt)
+
+test out
+
+
+class Gold(Item):
+    def __init__(self, amt):
+        self.amt = amt
+        super().__init__(name="Gold",
+                         description="A round coin with {} stamped on the front.".format(str(self.amt)),
+                         value=self.amt)
+[end]
+
+    [python]
+    super().__init__(parent_variable_1 = 'Explicity passed var 1',
+                        parent_variable_2 = 'Explicity pass var 2')
+    [end]

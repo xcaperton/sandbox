@@ -159,6 +159,7 @@ def cc_historical(ticker, start_time=None, end_time=None, period=300, chart=Fals
         polo = poloniex.Poloniex('5I7ELFOI-CL9RLWHL-M6Y1WTBH-BW37S4OO',
                                  'cef5ce2ce783f33f9d9bb881044080f9297c685fee8b893cf317cb71338c80a30af0d469c37597a8d4115365b652172a2ce99c84a938c826291617c510075d1d')
     if end_time is None:
+
         end_time = pd.to_datetime(datetime.datetime.now())
     if start_time is None:
         start_time = end_time - datetime.timedelta(days=1)
