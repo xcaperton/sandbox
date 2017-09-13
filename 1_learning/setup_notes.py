@@ -18,3 +18,16 @@
 2. Magic > VirtualEnv > Activate > py3
 3. Magic > VirtualEnv > SublimeREPL - Python
 '''
+
+'''
+To install matplotlib:
+
+brew install pkg-config
+brew install freetype
+
+pip install matplotlib
+
+import matplotlib
+matplotlib.use('TkAgg')
+
+'''

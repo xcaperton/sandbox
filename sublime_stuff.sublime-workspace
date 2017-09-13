@@ -179,25 +179,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "0_topics/12_data/data.py",
-			"settings":
-			{
-				"buffer_size": 401,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Jupyter Console 4.1.0\n\n\nIn [1]: ---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\n<ipython-input-1-7179d34abe82> in <module>()\n----> 1 from binascii import unhexlify as __un; exec(compile(__un(\"0a696d706f7274206d6174706c6f746c69622e7079706c6f7420617320706c740a0a73717561726573203d205b312c20342c20392c2031362c2032355d0a706c742e706c6f742873717561726573290a706c742e73686f7728290a\").decode(\"utf-8\"), \"<string>\", \"exec\"))\n\n<string> in <module>()\n\nModuleNotFoundError: No module named 'matplotlib'\n\nIn [2]: [1, 2, 3, 4, 5]\n\nIn [3]: ",
-			"settings":
-			{
-				"buffer_size": 628,
-				"line_ending": "Unix",
-				"name": "*REPL* [python]",
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -222,7 +203,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 87.0,
 		"last_filter": "vsub",
 		"selected_items":
 		[
@@ -231,11 +212,15 @@
 				"Virtualenv: SublimeREPL - Python"
 			],
 			[
-				"v",
+				"vac",
 				"Virtualenv: Activate"
 			],
 			[
-				"vac",
+				"vsubl",
+				"Virtualenv: SublimeREPL - Python"
+			],
+			[
+				"vaci",
 				"Virtualenv: Activate"
 			],
 			[
@@ -243,8 +228,8 @@
 				"Virtualenv: Activate"
 			],
 			[
-				"vsubl",
-				"Virtualenv: SublimeREPL - Python"
+				"v",
+				"Virtualenv: Activate"
 			],
 			[
 				"git push",
@@ -435,7 +420,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 521.0
+		"width": 475.0
 	},
 	"console":
 	{
@@ -453,21 +438,16 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/johncaperton/Projects",
-		"/Users/johncaperton/Projects/sandbox",
-		"/Users/johncaperton/Projects/sandbox/0_topics",
-		"/Users/johncaperton/Projects/sandbox/0_topics/12_data"
-	],
 	"file_history":
 	[
-		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/config/Python/ipy_repl.py",
-		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
-		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/python-py3.sublime-build",
-		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL-python.sublime-build",
-		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/py_matplotlib.sublime-snippet",
+		"/Users/johncaperton/Projects/sandbox/1_learning/setup_notes.py",
 		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/Virtualenv.sublime-settings",
+		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL-python.sublime-build",
+		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/User/python-py3.sublime-build",
+		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
+		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/config/Python/ipy_repl.py",
 		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
 		"/Users/johncaperton/Library/Application Support/Sublime Text 3/Packages/Virtualenv/Virtualenv.sublime-settings",
 		"/Users/johncaperton/Projects/sandbox/0_topics/aliens/settings.py",
@@ -525,7 +505,6 @@
 		"/Users/johncaperton/Projects/sandbox/2_projects/surfingtutorial/main_game.py",
 		"/Users/johncaperton/Projects/sandbox/2_projects/surfingtutorial/players.py",
 		"/Users/johncaperton/Projects/sandbox/surfingtutorial/game_inventory.py",
-		"/Users/johncaperton/Projects/sandbox/1_learning/setup_notes.py",
 		"/Users/johncaperton/Projects/sandbox/crypto/portfolio.py",
 		"/Users/johncaperton/Projects/sandbox/portfolio.py",
 		"/Users/johncaperton/Projects/sandbox/surfingtutorial/func_tools.py",
@@ -548,7 +527,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -562,6 +541,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"py3venv",
 			"py3",
 			"shell",
 			"r_settings",
@@ -634,6 +614,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"py3",
 			"py3venv"
 		],
 		"reverse": false,
@@ -645,294 +626,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "0_topics/12_data/data.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								108,
-								108
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": ".",
-									"selector": "source.python - string - comment - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										107,
-										108
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										106,
-										107
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								628,
-								628
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"default_dir": "/Users/johncaperton/Projects",
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "39e96a6a1bb249bc9ea5e40b9634a204",
-							"repl_restart_args":
-							{
-								"autocomplete_server": true,
-								"cmd":
-								[
-									"python",
-									"-u",
-									"${packages}/SublimeREPL/config/Python/ipy_repl.py"
-								],
-								"cwd": "$file_path",
-								"encoding": "utf8",
-								"extend_env":
-								{
-									"PATH": "/Users/johncaperton/Virtualenvs/py3/bin:/usr/bin:/bin:/usr/sbin:/sbin",
-									"PYTHONIOENCODING": "utf-8",
-									"VIRTUAL_ENV": "/Users/johncaperton/Virtualenvs/py3"
-								},
-								"external_id": "python",
-								"syntax": "Packages/Python/Python.tmLanguage",
-								"type": "subprocess"
-							},
-							"repl_sublime2": false,
-							"smart_indent": false,
-							"spell_check": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -947,18 +648,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.640090119295,
 			1.0
 		],
 		"rows":
@@ -981,10 +675,10 @@
 		"height": 130.0
 	},
 	"pinned_build_system": "Packages/User/python-py3.sublime-build",
-	"project": "sandbox.sublime-project",
+	"project": "sublime_stuff.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -1050,7 +744,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 232.0,
+	"side_bar_width": 297.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
