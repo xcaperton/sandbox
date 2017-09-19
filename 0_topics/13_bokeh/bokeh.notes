@@ -1,0 +1,29 @@
+-----------------------------------------------------------
+    Bokeh Stuff
+-----------------------------------------------------------
+
+Set Up:
+output_file("test.html") <- add mode='inline' for offline mode
+s1 = figure()
+
+Figure:
+ - width
+ - plot_height
+ - title
+ - x_range, y_range -> can be passed to other figures and they will share axis ranges
+
+Glyphs:
+ - Types: circle, triangle, square, line
+ - Properties:
+    - size
+    - color
+    - alpha -> how see through
+
+Gridplot:
+ - gridplot([fig1,fig2,fig3]) -> sets up a plot of grids that can interact
+ - 
+
+
+
+
+
