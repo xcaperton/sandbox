@@ -2,6 +2,10 @@
 #   Surfline API and Charting with Bokeh
 #------------------------------
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+bob sam Bob
+
 import csv
 import urllib.request
 import json
@@ -36,6 +40,8 @@ def get_surf_height(location_dict, height_type):
 
     return temp
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # Pull Request from Surfline
 surf = urllib.request.urlopen("http://api.surfline.com/v1/forecasts/5252?resources=surf,analysis&days=12&getAllSpots=True&units=e&interpolate=false&showOptimal=false")
@@ -53,6 +59,7 @@ for spot in all_spots:
 
     spots_list.append(spot_temp)
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #------------------------------
 #   BUILD BOKEH PLOT
 #------------------------------
@@ -76,14 +83,14 @@ p1.legend.click_policy = "mute"
 
 show(p1)
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #------------------------------
 #   Build Single Plot for one spot
 #------------------------------
-# MARKERSTART
 
 
-output_file('test.html', mode='inline')
+output_file('test.html')
 
 # Configure Data
 spot = spots_list[0]
@@ -157,7 +164,7 @@ p1.add_tools(HoverTool(tooltips="""
 
 show(p1)
 
-# MARKEREND
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #------------------------------
 #   Test charting

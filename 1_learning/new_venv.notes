@@ -1,0 +1,35 @@
+
+1. Create folder for virtual env 'learning_log'
+2. learning_log$ "python -m venv 11_env"
+3. active the virtualenv with "source 11_env/bin/activate"
+4. "pip install Django"
+5. learning_log$ "django-admin.py startproject learning_log ."
+
+
+To set up git:
+1. Go to top level directory
+2. Type "git init"
+3. Create .gitignore
+    11_env/
+    *.pyc
+    *.swp
+    *.sqllite
+    __pycache__
+4. Then type following:
+    - git init
+    - git add .
+    - git commit -m "first commit"
+    - git remote add origin [remote repository URL]
+    - git remote -v
+    - git push -u origin master
+    - ** if above doesn't work type "git pull --rebase [remote repository url]" before the git push
+
+
+5. Set up Sublime Repl to work with Jupyter
+    - ensure venv activated and run "pip install -U ipython==4.1.1 jupyter_console==4.1.0 jupyter"
+    - above info from: https://gist.github.com/MattDMo/6cb1dfbe8a124e1ca5af
+
+
+
+
+

@@ -1,3 +1,7 @@
+#------------------------------
+#   Plotting with MatPlotLib
+#------------------------------
+
 # Generating Data
 
 import os
@@ -8,6 +12,14 @@ os.chdir(ret)
 import matplotlib
 import matplotlib.pyplot as plt
 from random_walk import RandomWalk
+
+# MARKERSTART
+
+# MARKERSTART
+
+print('test1')
+
+# MARKEREND
 
 
 #------------------------------
